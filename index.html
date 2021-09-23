@@ -1,34 +1,23 @@
 <html>
-    <head>
-        <title>Guest List</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-    </head>
-    <body style="text-align: center;">
-        <h1>Guest List</h1>
-        <input type="text" placeholder="Enter Name" id="Enter_name">
-        <button onclick="Submit()">Submit</button>
-        <hr>
-        <div id="Display_names">
+<head>  
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+</script>
+</head>
+<body class="body_backgorund" style="text-align: center;">
+<h1 id="h1">Paint</h1>
 
-        </div>
-        <hr>
-        <button onclick="Show_list()">Show</button>
-        <div id="Show_names">
-
-        </div>
-        <hr>
-        <hr>
-        <button onclick="sorting()">Sort List</button>
-        <div id="Sorted_names">
-
-        </div>
-        <hr>
-        <hr>
-        <input type="text" placeholder="Search Name" id="Search_name">
-        <button onclick="Search()">Search</button>
-        <div id="Search_names">
-
-        </div>
-    </body>
+    <canvas id="myCanvas" width="800" height="350"></canvas>
+    <br><br>
+<span>Color - </span> <input type="text" id="color" value="Pink">
+<span>Width of the line - </span> <input type="text" id="Width_of_line" value="5">
+<br>
+<br>
+<button onclick="Clear_drawing();">Clear Area</button>
+<script src="main.js"></script>
+</body>
 </html>
